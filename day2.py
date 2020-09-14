@@ -15,7 +15,7 @@ if age >= "18":
         if wants_to_play == "Yes" or "yes":
         print(space)
         print("Let's play! ")
-    
+
         left_or_right = input("First choice... Left of Right? ")
         if left_or_right = "left":
             ans = input("Nice, you follow the path and reach a lake... Do you swim across or go around (across/around)? ")
@@ -26,18 +26,18 @@ if age >= "18":
                 elif ans== across:
                 print("You managed to get across, but were bit by a fish and lost 5 health. ")
                 health -= 5
-            
+
                 else:
                 print("You lost...")
      else:
         print("You fell down a lost...")
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
 else:
     print("Cya...")
     elif age >="13":
@@ -59,4 +59,3 @@ int 8, 7, -9, 10000
 float 6.0, 7.5, -9.8, -100.0
 bool True, False
 '''
- 
