@@ -7,43 +7,39 @@ age= input("What is your age? ")
 
 health = 10
 
-print("You are starting with", health, "heatlh.")
+
 
 if age >= "18":
-    print("You are old enough to play!")
-    wants_to_play= input("Do you want to play? ").lower()
-        if wants_to_play == "Yes" or "yes":
+    wants_to_play= input("Radical, do you want to play? ").lower()
+
+    if wants_to_play == "Yes" or "yes":
+        print("You are starting with", health, "heatlh.")
         print(space)
         print("Let's play! ")
 
-        left_or_right = input("First choice... Left of Right? ")
-        if left_or_right = "left":
-            ans = input("Nice, you follow the path and reach a lake... Do you swim across or go around (across/around)? ")
+        left_or_right = input("First choice... Left of Right? ").lower()
+        if left_or_right == "left":
+            ans = input("Nice, you followed the path and reach a lake... Do you swim across or go around? ").lower()
 
-            if ans== around:
-                print("You went around and reached the other side of the lake")
+            if ans== "around":
+                print("You went around and reached the other end of the lake.")
 
-                elif ans== across:
-                print("You managed to get across, but were bit by a fish and lost 5 health. ")
-                health -= 5
+            if ans== "across":
+                print("You somehow made it across but, a shark bit you along the way and you lost 5 health...")
+                health-= 5
 
-                else:
-                print("You lost...")
-     else:
-        print("You fell down a lost...")
+        if left_or_right == "right":
+            ans= input("Ouch, you fell a died...")
 
-
-
-
-
-
-
-else:
-    print("Cya...")
-    elif age >="13":
-        print("You can play with supervision. ")
+        else:
+            print("You lost...")
     else:
-        print("You are not old enough to play...")
+     print("Cya...")
+
+elif age >="13":
+    print("You can play with supervision. ")
+else:
+    print("You are not old enough to play...")
 
 
 
